@@ -10,7 +10,7 @@ clone() {
     return new this.constructor(this.modelo,this.marca,this.cor,this.numeroRodas);
 }
 represent(){
-    console.log(`Modelo: ${this.modelo}, Marca: ${this.marca}, Cor: ${this.cor}, numeroRodas: ${this.numeroRodas}`);
+    return `Modelo: ${this.modelo}, Marca: ${this.marca}, Cor: ${this.cor}, numeroRodas: ${this.numeroRodas}`;
 }
 }
 
@@ -18,6 +18,13 @@ export class Moto extends Veiculo{
     constructor(modelo,marca,cor,numeroRodas, cilindradas) {
         super(modelo,marca,cor,numeroRodas);
         this.cilindradas = cilindradas;
+}
+clone() {
+    return new this.constructor(this.modelo,this.marca,this.cor,this.numeroRodas,this.cilindradas);
+    
+}
+represent(){
+    return super.represent() + `, Cilindradas: ${this.cilindradas}`;
 }
 }
 
@@ -27,4 +34,11 @@ export class Carro extends Veiculo{
         this.potencia = potencia;
         this.nmLugares = nmLugares;
     }
+clone(){
+    return new this.constructor(this.modelo,this.marca,this.cor,this.numeroRodas,this.potencia,this.nmLugares);
 }
+represent() {
+    return super.represent() + `, Potencia: ${this.potencia}, Numero de Lugares: ${this.nmLugares}`;
+}
+}  
+
