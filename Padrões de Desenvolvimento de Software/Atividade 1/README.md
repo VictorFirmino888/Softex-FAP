@@ -7,7 +7,7 @@
 > Atividade 1 - Criar uma fabrica de Computadores que tenham dois tipos de maquinas, PC e Server.
 
 > [!NOTE]
-> - considerando os seguintes pontos:> [!NOTE]
+> - considerando os seguintes pontos:
 > 1. terem uma interface em comum;
 > 2. o cliente deve utilizar apenas a fabrica de Computadores para criar instancias do tipo abstrato da interface;
 > 3. todo computador deve ter os atributos, ram, hdd, cpu e tipo;
