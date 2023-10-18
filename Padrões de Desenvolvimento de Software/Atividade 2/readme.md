@@ -8,7 +8,6 @@
 
 > [!NOTE]
 > - considerando os seguintes pontos:
-> [!NOTE]
 > 1. implemente uma classe abstrata Veículo, com um construtor padrão e os métodos clone e represent;
 > 2. o construtor da classe veiculo deve receber o modelo,marca,cor e numeroRodas como parametros;
 > 3. crie pelo menos duas subclasses para veiculo, que acrescentam um ou mais atributos;
