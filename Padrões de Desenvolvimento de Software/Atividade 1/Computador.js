@@ -1,13 +1,13 @@
 export class computador{
-    constructor(ram, hdd, cpu, type) {
+    constructor(ram, hdd, cpu, tipo) {
         this.ram = ram;
         this.hdd = hdd;
         this.cpu = cpu;
-        this.type = type;
+        this.tipo = tipo;
 }
 
 toString() {
-    return `Type: ${this.type}, RAM: ${this.ram}GB, HDD: ${this.hdd}GB, CPU: ${this.cpu}Ghz`;
+    return `Tipo: ${this.tipo}, RAM: ${this.ram}GB, HDD: ${this.hdd}GB, CPU: ${this.cpu}Ghz`;
 }
 }
 

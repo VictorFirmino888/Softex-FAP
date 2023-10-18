@@ -1,10 +1,10 @@
 import { PC, Server, computador } from "./Computador.js";
 
 class fabricaPC extends computador{
-    criarComputador(type,ram,hdd,cpu) {
-        if (type === 'PC') {
+    criarComputador(tipo,ram,hdd,cpu) {
+        if (tipo === 'PC') {
             return new PC(ram,hdd,cpu);
-        }else if (type === 'Server') {
+        }else if (tipo === 'Server') {
             return new Server(ram,hdd,cpu);
         }else {
             throw new Error("Tipo de máquina inexistente");
