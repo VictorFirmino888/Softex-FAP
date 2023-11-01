@@ -7,9 +7,9 @@ export class Sanduiche implements isanduiche{
     private ingredientes: isanduiche[];
 
 
-    constructor(){
-        this.sabor = [];
-        this.ingredientes = [];
+    constructor(sabor: isanduiche[], ingredientes: isanduiche[]){
+        this.sabor = sabor;
+        this.ingredientes = ingredientes;
     }
 
     addSabor(sabor: isanduiche) {
@@ -23,10 +23,11 @@ preco(): number{
     let valor = 0;
     for (const sabor of this.sabor) {
         valor += sabor.preco();
+    }
     for (const ingrediente of this.ingredientes)   {
         valor += ingrediente.preco();
     } 
-}
+
 return valor;
 }
 

@@ -7,10 +7,10 @@ const sanduba = new FrangoAssado();
 const ingredientePepperoni = new Pepperoni();
 const ingredienteQueijoMussarelaRalado = new QueijoMussarelaRalado();
 
-const sanduichePronto = new Sanduiche();
+const sabor = [sanduba];
+const ingredientes = [ingredientePepperoni, ingredienteQueijoMussarelaRalado]
 
-sanduichePronto.addSabor(sanduba);
-sanduichePronto.addIngrediente(ingredientePepperoni);
-sanduichePronto.addIngrediente(ingredienteQueijoMussarelaRalado);
+const sanduichePronto = new Sanduiche(sabor, ingredientes);
+
 
 sanduichePronto.print();
