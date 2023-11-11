@@ -1,0 +1,4 @@
+Padrão Adapter
+
+Crie um adaptador que permita que um objeto do tipo Pato seja usado como se fosse um objeto tipo Galinha.
+crie as classes AdaptadorPato e AdaptadorPatoDemo para demonstrar o uso da classe AdaptadorPato.
